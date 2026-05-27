@@ -72,14 +72,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "ScreenSense AI — Your AI Assistant For Everything On Screen" },
+      {
+        name: "description",
+        content:
+          "A floating AI orb that lives on your desktop. Live captions, smart meeting notes, scene understanding, AI summaries and more — all from one glowing orb.",
+      },
+      { name: "author", content: "ScreenSense AI" },
+      { property: "og:title", content: "ScreenSense AI — Your Desktop AI Companion" },
+      {
+        property: "og:description",
+        content:
+          "A floating AI orb that watches your screen and helps you understand, capture and organize everything in real time.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@ScreenSenseAI" },
     ],
     links: [
       {
@@ -96,17 +104,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="bg-background text-foreground antialiased">
         {children}
         <Scripts />
       </body>
     </html>
   );
 }
+
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
