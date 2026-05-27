@@ -1,26 +1,33 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useState } from "react";
+import { Background } from "../components/landing/Background";
+import { Nav } from "../components/landing/Nav";
+import { Hero } from "../components/landing/Hero";
+import { Preview } from "../components/landing/Preview";
+import { Features } from "../components/landing/Features";
+import { HowItWorks } from "../components/landing/HowItWorks";
+import { Tech } from "../components/landing/Tech";
+import { Download } from "../components/landing/Download";
+import { Footer } from "../components/landing/Footer";
 
 export const Route = createFileRoute("/")({
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  const [version, setVersion] = useState<string | null>(null);
+
+  return (
+    <main className="relative min-h-screen overflow-x-hidden text-white">
+      <Background />
+      <Nav />
+      <Hero version={version} />
+      <Preview />
+      <Features />
+      <HowItWorks />
+      <Tech />
+      <Download onVersion={setVersion} />
+      <Footer version={version} />
+    </main>
+  );
 }
