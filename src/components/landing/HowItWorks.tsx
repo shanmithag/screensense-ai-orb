@@ -98,7 +98,15 @@ function ApiCard({
       </div>
       <p className="mt-2 text-sm text-white/65">{desc}</p>
       <a
-        href={url} target="_blank" rel="noreferrer"
+        href={url} target="_blank" rel="noopener noreferrer"
+        onClick={(e) => {
+          // Preview iframes often block window.open popups; fall back to same-tab nav.
+          const w = window.open(url, "_blank", "noopener,noreferrer");
+          if (!w) {
+            e.preventDefault();
+            window.top ? (window.top.location.href = url) : (window.location.href = url);
+          }
+        }}
         className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-white/85 hover:text-white"
       >
         Get your key <span aria-hidden>→</span>
