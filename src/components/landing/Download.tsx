@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RELEASES_API, REPO_URL } from "../../lib/repo";
 
 type Asset = { name: string; browser_download_url: string; size: number };
