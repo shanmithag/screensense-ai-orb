@@ -17,19 +17,27 @@ const PLATFORMS: PlatformInfo[] = [
     key: "windows",
     label: "Windows",
     Icon: WindowsIcon,
-    match: (n) => /\.exe$|\.msi$|win(dows)?/i.test(n),
+
+    match: (n) =>
+  /^screensense-ai-setup-.*\.exe$/i.test(n),
   },
+
   {
     key: "mac",
     label: "macOS",
     Icon: AppleIcon,
-    match: (n) => /\.dmg$|\.pkg$|mac|darwin|osx/i.test(n),
+
+    match: (n) =>
+      /\.dmg$/i.test(n),
   },
+
   {
     key: "linux",
     label: "Linux",
     Icon: LinuxIcon,
-    match: (n) => /\.appimage$|\.deb$|\.rpm$|\.tar\.gz$|linux/i.test(n),
+
+    match: (n) =>
+      /\.appimage$/i.test(n),
   },
 ];
 
