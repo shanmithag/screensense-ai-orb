@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Background } from "../components/landing/Background";
 import { Nav } from "../components/landing/Nav";
 import { Hero } from "../components/landing/Hero";
-import { Preview } from "../components/landing/Preview";
 import { Features } from "../components/landing/Features";
 import { HowItWorks } from "../components/landing/HowItWorks";
 import { Tech } from "../components/landing/Tech";
@@ -22,7 +21,6 @@ function Index() {
       <Background />
       <Nav />
       <Hero version={version} />
-      <Preview />
       <Features />
       <HowItWorks />
       <Tech />
