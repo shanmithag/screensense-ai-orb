@@ -8,7 +8,7 @@ type Platform = "windows" | "mac" | "linux";
 type PlatformInfo = {
   key: Platform;
   label: string;
-  Icon: (p: { className?: string }) => JSX.Element;
+  Icon: (p: { className?: string }) => React.ReactElement;
   match: (name: string) => boolean;
 };
 
