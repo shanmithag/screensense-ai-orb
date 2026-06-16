@@ -9,7 +9,7 @@ export function Preview() {
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-white/60">
           The orb sits quietly on your desktop and surfaces context as you work — captions, notes,
-          summaries and scene awareness, all in one canvas.
+          summaries, scene awareness and productivity insights, all in one canvas.
         </p>
       </div>
 
@@ -76,6 +76,30 @@ export function Preview() {
                 <p><span className="text-blue-300">Ari:</span> I'll prep the release notes.</p>
                 <p className="text-white/40">…</p>
               </div>
+            </div>
+
+            {/* Activity Insights panel */}
+            <div className="absolute right-4 bottom-6 w-[36%] rounded-xl glass p-3 text-left">
+              <p className="text-[10px] uppercase tracking-wider text-white/40">Activity Insights</p>
+              <div className="mt-2 grid grid-cols-2 gap-2 text-[11px]">
+                <div className="rounded-lg bg-white/5 px-2 py-1.5">
+                  <p className="text-white/40">Focus time</p>
+                  <p className="font-medium text-white">3m</p>
+                </div>
+                <div className="rounded-lg bg-white/5 px-2 py-1.5">
+                  <p className="text-white/40">Sessions</p>
+                  <p className="font-medium text-white">1</p>
+                </div>
+                <div className="rounded-lg bg-white/5 px-2 py-1.5">
+                  <p className="text-white/40">Top app</p>
+                  <p className="font-medium text-blue-300">Code</p>
+                </div>
+                <div className="rounded-lg bg-white/5 px-2 py-1.5">
+                  <p className="text-white/40">Peak period</p>
+                  <p className="font-medium text-white">12–1 PM</p>
+                </div>
+              </div>
+              <p className="mt-2 text-[10px] text-white/40">Longest sustained focus: 24s</p>
             </div>
 
             {/* AI summary panel */}

@@ -25,7 +25,7 @@ export function Hero({ version }: { version: string | null }) {
           </h1>
 
           <p className="mt-6 max-w-xl text-pretty text-base text-white/65 md:text-lg">
-            Live captions. Smart notes. Scene understanding. AI summaries.{" "}
+            Live captions. Smart notes. Scene understanding. AI summaries. Activity insights.{" "}
             <span className="text-white">One floating orb.</span>
           </p>
 

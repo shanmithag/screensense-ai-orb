@@ -82,12 +82,12 @@ const FEATURES = [
   },
   {
     title: "Activity Insights",
-    desc: "Focus time, app switches, usage tables and an activity timeline.",
+    desc: "Daily focus reports, app usage tables, and a full activity timeline.",
     icon: "chart",
     tone: "blue",
     detail:
-      "Turn your day into data. Activity Insights tracks focus time, counts app switches, and surfaces usage tables alongside a full timeline of application activity — so you can see where your attention really went and build healthier work patterns.",
-    highlights: ["Focus time tracking", "App switch counter", "Usage tables", "Activity timeline"],
+      "ScreenSense turns your workday into a live productivity report. See total focus time, longest sustained sessions, and a per-app breakdown of where your attention went — complete with running times, window titles, and a visual timeline of every app you touched.",
+    highlights: ["Daily focus summary", "Per-app usage tables", "Activity timeline", "Sustained focus tracking"],
   },
 ] as const;
 
