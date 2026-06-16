@@ -80,6 +80,15 @@ const FEATURES = [
       "The orb isn't just watching — it's ready to talk. Ask about what's on screen, request summaries, get explanations, or have it take action. Session Chat is context-aware and grounded in what you're actually doing.",
     highlights: ["Context-aware responses", "Multi-turn conversations", "Screen-grounded answers", "Voice or text input"],
   },
+  {
+    title: "Activity Insights",
+    desc: "Focus time, app switches, usage tables and an activity timeline.",
+    icon: "chart",
+    tone: "blue",
+    detail:
+      "Turn your day into data. Activity Insights tracks focus time, counts app switches, and surfaces usage tables alongside a full timeline of application activity — so you can see where your attention really went and build healthier work patterns.",
+    highlights: ["Focus time tracking", "App switch counter", "Usage tables", "Activity timeline"],
+  },
 ] as const;
 
 export function Features() {
@@ -210,6 +219,7 @@ function FeatureIcon({ name }: { name: string }) {
     case "shield":   return (<svg viewBox="0 0 24 24" {...p}><path d="M12 3 4 6v6c0 5 3.5 8.5 8 9 4.5-.5 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg>);
     case "mic":      return (<svg viewBox="0 0 24 24" {...p}><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>);
     case "chat":     return (<svg viewBox="0 0 24 24" {...p}><path d="M21 12a8 8 0 0 1-11.5 7.2L4 21l1.8-5.5A8 8 0 1 1 21 12Z"/><path d="M8 11h.01M12 11h.01M16 11h.01"/></svg>);
+    case "chart":    return (<svg viewBox="0 0 24 24" {...p}><path d="M3 3v18h18"/><path d="M7 15l3-4 3 2 5-7"/><circle cx="7" cy="15" r="1.2" fill="currentColor"/><circle cx="18" cy="6" r="1.2" fill="currentColor"/></svg>);
     default: return null;
   }
 }
