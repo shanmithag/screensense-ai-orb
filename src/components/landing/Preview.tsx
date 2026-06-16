@@ -9,7 +9,7 @@ export function Preview() {
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-white/60">
           The orb sits quietly on your desktop and surfaces context as you work — captions, notes,
-          summaries and scene awareness, all in one canvas.
+          summaries, scene awareness and productivity insights, all in one canvas.
         </p>
       </div>
 
