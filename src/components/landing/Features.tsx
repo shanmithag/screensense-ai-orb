@@ -80,6 +80,15 @@ const FEATURES = [
       "The orb isn't just watching — it's ready to talk. Ask about what's on screen, request summaries, get explanations, or have it take action. Session Chat is context-aware and grounded in what you're actually doing.",
     highlights: ["Context-aware responses", "Multi-turn conversations", "Screen-grounded answers", "Voice or text input"],
   },
+  {
+    title: "Activity Insights",
+    desc: "Focus time, app switches, usage tables and an activity timeline.",
+    icon: "chart",
+    tone: "blue",
+    detail:
+      "Turn your day into data. Activity Insights tracks focus time, counts app switches, and surfaces usage tables alongside a full timeline of application activity — so you can see where your attention really went and build healthier work patterns.",
+    highlights: ["Focus time tracking", "App switch counter", "Usage tables", "Activity timeline"],
+  },
 ] as const;
 
 export function Features() {
